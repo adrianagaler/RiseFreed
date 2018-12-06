@@ -7,6 +7,7 @@ import DefendantForm from "./pages/DefendantForm";
 import PlaintiffForm from "./pages/PlaintiffForm";
 import protectiveorder from './pages/protectiveorder';
 import affadavit from './containers/affadavit';
+import About from './pages/About';
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
@@ -22,6 +23,7 @@ class App extends Component {
           <Route exact path="/plaintiff" component={PlaintiffForm} /> 
           <Route exact path="/protectiveorder" component={protectiveorder} /> 
           <Route exact path="/affadavit" component={affadavit} /> 
+          <Route exact path="/about" component={About} /> 
         </Switch>
       </Router>
     );

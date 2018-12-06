@@ -17,7 +17,7 @@ class LandingPage extends Component {
                                           <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/7578331555177628-1543890704871-B416BBA6-1B4D-433B-A44C-C3C2CE3A2C8E.png" className="desktop_hd-risefreed_2" /> 
                                           <div className="desktop_hd-0-0-0-0-0-0-0-0-1">
                                               <div className="desktop_hd-0-0-0-0-0-0-0-0-1-0">
-                                                  <div className="desktop_hd-about-1"> About </div>
+                                                  <div className="desktop_hd-about-1"><Link to="/about"> About </Link></div>
                                               </div>
                                           </div>
                                           <div className="desktop_hd-0-0-0-0-0-0-0-0-2">

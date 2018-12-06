@@ -3,6 +3,34 @@ import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import { Button, Span } from "./styles";
 
+const background = {
+  backgroundImage: "url('https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')",
+}
+const formbackground = {
+  backgroundColor: "#FFFFFF",
+  padding: 60,
+  margin: 70,
+  display: "inline-block",
+  fontFamily: "helvetica",
+  fontSize: 20,
+  textAlign: "left",
+  width: 1200,
+}
+const letterStyle = {
+  margin: 5,
+  display: "inline-block",
+  fontFamily: "helvetica",
+  fontSize: 20,
+  textAlign: "left"
+};
+const hel = {
+  padding: 5,
+}
+const h ={
+  padding: 50,
+  color: "#FFFFFF",
+  fontFamily: "sans-serif",
+}
 
 class FormsPage extends React.Component {
   constructor(props) {
@@ -10,34 +38,6 @@ class FormsPage extends React.Component {
   }
   
   render() {
-  var background = {
-    backgroundImage: "url('https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')",
-  }
-  var formbackground = {
-    backgroundColor: "#FFFFFF",
-    padding: 60,
-    margin: 70,
-    display: "inline-block",
-    fontFamily: "helvetica",
-    fontSize: 20,
-    textAlign: "left",
-    width: 1200,
-  }
-  var letterStyle = {
-    margin: 5,
-    display: "inline-block",
-    fontFamily: "helvetica",
-    fontSize: 20,
-    textAlign: "left"
-  };
-  var hel = {
-    padding: 5,
-  }
-  var h ={
-    padding: 50,
-    color: "#FFFFFF",
-    fontFamily: "sans-serif",
-  }
     return (
       <form onSubmit={this.handleSubmit} style = {background}>
         <h2 style = {h}>Plaintiff Information Form</h2>

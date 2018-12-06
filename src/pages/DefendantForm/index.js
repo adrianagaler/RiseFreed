@@ -3,32 +3,33 @@ import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import { Button, Span } from "./styles";
 
+const background = {
+  backgroundImage: "url('https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')",
+}
+const formbackground = {
+  backgroundColor: "#FFFFFF",
+}
+const letterStyle = {
+  margin: 50,
+  display: "inline-block",
+  fontFamily: "helvetica",
+  fontSize: 20,
+  textAlign: "left"
+};
+const hel = {
+  margin: 5,
+}
+const h ={
+  color: "#FFFFFF",
+  fontFamily: "sans-serif",
+}
+
 class FormsPage extends React.Component {
   constructor(props) {
     super(props);
   }
   
   render() {
-    var background = {
-      backgroundImage: "url('https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')",
-    }
-    var formbackground = {
-      backgroundColor: "#FFFFFF",
-    }
-    var letterStyle = {
-      margin: 50,
-      display: "inline-block",
-      fontFamily: "helvetica",
-      fontSize: 20,
-      textAlign: "left"
-    };
-    var hel = {
-      margin: 5,
-    }
-    var h ={
-      color: "#FFFFFF",
-      fontFamily: "sans-serif",
-    }
     return (
       <form onSubmit={this.handleSubmit} style = {background}>
       <div style={letterStyle}>
