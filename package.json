@@ -16,6 +16,7 @@
     "react-emotion": "^10.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
+    "react-typeform-embed": "^0.1.6",
     "rebass": "^3.0.0-12",
     "serve": "^8.2.0",
     "styled-components": "^4.1.2",

@@ -9,65 +9,98 @@ class FormsPage extends React.Component {
   }
   
   render() {
+    var background = {
+      backgroundImage: "url('https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')",
+    }
+    var formbackground = {
+      backgroundColor: "#FFFFFF",
+    }
+    var letterStyle = {
+      margin: 50,
+      display: "inline-block",
+      fontFamily: "helvetica",
+      fontSize: 20,
+      textAlign: "left"
+    };
+    var hel = {
+      margin: 5,
+    }
+    var h ={
+      color: "#FFFFFF",
+      fontFamily: "sans-serif",
+    }
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h2>Please provide as much info as possible!</h2>
-        <fieldset>
-        <legend>Defendant Form:</legend>
+      <form onSubmit={this.handleSubmit} style = {background}>
+      <div style={letterStyle}>
+        <h2 style={h}>Defendant Information Form</h2>
+        <fieldset style = {formbackground}>
         <div>
         <label>
         What is the name of the person you would like to get a restraining order from?
+        <div style = {hel}>
         <input type="text" required  name="name" placeholder="full name"/>
+        </div>
         </label>
         </div>
         <div>
         <label>
         Any other names used by the defendant if any?
+        <div style = {hel}>
         <input type="text" required  name="name" placeholder="full name"/>
+        </div>
         </label>
         </div>
         <div>
         <label>
         Your date of birth?
+        <div style = {hel}>
         <input type="text" required  name="name" placeholder="YYYY/MM/DD"/>
+        </div>
         </label>
         </div>
         <div>
         <label>
         Place of Birth?
+        <div style = {hel}>
       <input type="text" required  name="name"/>
+      </div>
         </label></div>
         <div>
         <label>
         Social Security Number?
+        <div style = {hel}>
         <input type="text" required placeholder="000-00-0000"/>
+        </div>
         </label>
         </div>
         <div>
         <label>
         Mother’s maiden name?
+        <div style = {hel}>
         <input type="text"  />
+        </div>
         </label>
         </div>
         <div>
         <label>
         Father’s name?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Sex?
+        <div style = {hel}>
         <input type="radio" />Female
         <input type="radio" />Male
-        <input type="radio" />Other
+        <input type="radio" />Other</div>
         </label>
         </div>
-
-
         <div>
         <label>
         Race?
+        <div style = {hel}>
         <select placeholder="none">
         <option value="Caucasian">Caucasian</option>
          <option value="African American">African American</option>
@@ -75,12 +108,14 @@ class FormsPage extends React.Component {
          <option value="Hispanic">Hispanic</option>
          <option value="Hispanic">Hispanic</option>
         </select>
+        </div>
         </label>
         </div>
         <div>
         <label>
         Eyes?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
@@ -88,204 +123,237 @@ class FormsPage extends React.Component {
         <div>
         <label>
         Hair
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         Height
-        <input type="number" required placeholder="in inches" />
+        <div style = {hel}>
+        <input type="number" required placeholder="in inches" /></div>
         </label>
         </div>
         <div>
         <label>
         Weight
-        <input type="number" required placeholder="in lbs" />
+        <div style = {hel}>
+        <input type="number" required placeholder="in lbs" /></div>
         </label>
         </div>
         <div>
         <label>
         Include Photo
-        <input type="file" name="pic" accept="image/*"/>
+        <div style = {hel}>
+        <input type="file" name="pic" accept="image/*"/></div>
         </label>
         </div>
         <div>
         <label>
         Build?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Other physical characteristics? (beard, glasses, tattoos, etc.)
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Home address?
-        <input type="text"  />
+        <div style = {hel}>
+        <input type="text"  /></div>
         </label>
         </div>
         <div>
         <label>
         Home telephone No.?
-        <input type="text" required placeholder="000-000-0000" />
+        <div style = {hel}>
+        <input type="text" required placeholder="000-000-0000" /></div>
         </label>
         </div>
 
         <div>
         <label>
         Apt no?
-        <input type="text"   />
+        <div style = {hel}>
+        <input type="text"   /></div>
         </label>
         </div>
         <div>
         <label>
         Floor no?
-        <input type="text"   />
+        <div style = {hel}>
+        <input type="text"   /></div>
         </label>
         </div>
         <div>
         <label>
         Name on door/mailbox:
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Does the defendant understand English?
+        <div style = {hel}>
         <input type="radio" />Yes
         <input type="radio" />No
-        <input type="radio" />N/a
+        <input type="radio" />N/a</div>
         </label>
         </div>
         <div>
         <label>
         Workplace?
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Work telephone no?
-        <input type="text" placeholder="000-000-0000"/>
+        <div style = {hel}>
+        <input type="text" placeholder="000-000-0000"/></div>
         </label>
         </div>
         <div>
         <label>
         Work address:
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Title:
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Department:
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Work hours?
-        <input type="numbers" placeholder="ex: 8"/>
+        <div style = {hel}>
+        <input type="numbers" placeholder="ex: 8"/></div>
         </label>
         </div>
         <div>
         <label>
         Other places defendant may be found (friends, bars, relatives, hangouts)
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Best place to find defendant? Best times?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Motor vehicle license plate?Year?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Year?
-        <input type="text" placeholder="YYYY"/>
+        <div style = {hel}>
+        <input type="text" placeholder="YYYY"/></div>
         </label>
         </div>
         <div>
         <label>
         Make?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Model?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Color?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Does this person have a history of violence toward polic officers?
+        <div style = {hel}>
         <input type="radio" /> Yes
-        <input type="radio" /> No
+        <input type="radio" /> No</div>
         </label>
         </div>
         <div>
         <label>
         A history of using/abusing drugs or alcohol?
+        <div style = {hel}>
         <input type="radio" /> Yes
-        <input type="radio" /> No
+        <input type="radio" /> No</div>
         </label>
         </div>
         <div>
         <label>
         If yes: what kind?
-        <input type="text" />
+        <div style = {hel}>
+        <input type="text" /></div>
         </label>
         </div>
         <div>
         <label>
         Access to guns, a license to carry, or possess a gun?
+        <div style = {hel}>
         <input type="radio" /> Yes
-        <input type="radio" /> No
+        <input type="radio" /> No</div>
         </label>
         </div>
         <div>
         <label>
         If yes, what kind?
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Psychiatric/emotional problems?
+        <div style = {hel}>
         <input type="radio" /> Yes
-        <input type="radio" /> No
+        <input type="radio" /> No</div>
         </label>
         </div>
         <div>
         <label>
         If yes, what kind? 
-        <input type="text"/>
+        <div style = {hel}>
+        <input type="text"/></div>
         </label>
         </div>
         <div>
         <label>
         Any other information helpful in locating this person
-        <input type="textarea"/>
+        <div style = {hel}>
+        <input type="textarea"/></div>
         </label>
         </div>
          </fieldset>
@@ -298,6 +366,7 @@ class FormsPage extends React.Component {
           <Link to="/">
             <Button> <Span/> Go back to Homepage</Button>
           </Link>
+          </div>
       </form>
     );
   }

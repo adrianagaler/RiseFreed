@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
 import { Button, Span } from "./styles";
-import { Formik } from 'formik';
+import { SSL_OP_TLS_BLOCK_PADDING_BUG } from "constants";
 
 
 class FormsPage extends React.Component {
@@ -42,6 +42,20 @@ class FormsPage extends React.Component {
         }
 
     render() {
+      var background = {
+        backgroundImage: "url('https://images.unsplash.com/photo-1494451930944-8998635c2123?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6fc9d727accaab5052cd754f634e768&auto=format&fit=crop&w=1651&q=80')",
+      }
+      var letterStyle = {
+        margin: 50,
+        display: "inline-block",
+        fontFamily: "sans-serif",
+        fontSize: 25,
+        color: "#FFFFFF",
+        textAlign: "left"
+      };
+      var buttonstyle = {
+        padding: 50,
+      }
     var count = 0;
     if (this.state.isChecked) {
       count=count+1
@@ -49,26 +63,24 @@ class FormsPage extends React.Component {
       count=count
     }
       return (
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} style = {background}>
+        <div  style={letterStyle}>
+        <h2>Protective Order Elgibility Confirmation</h2>
           <table>
-            <tr>
-              <th><label for="options">Protective Order Eligibility?</label></th>
               <td>
                 <p>Were you and your abuser married, residing together, in a substantive dating or engagement relationship, related by blood or marriage, or have a child in common?</p><input type="checkbox" class="checkbox" name="q1" value="Test1" onChange={ this.handleChecked }></input>
                 <p>Are you suffering from abuse because your abuser has harmed or attempted to harm you physically, or put you in fear of imminent serious physical harm, or caused you to engage in sexual relations involuntarily by using force, threat or duress?</p><input type="checkbox" class="checkbox" name="q2" value="Test2"></input>
                 <p>Are you currently living within the geographical area of this court, or used to live within the geographical area of this court but you left to avoid abuse? </p><input type="checkbox" class="checkbox" name="q3" value="Test3" onclick={this.handleSubmit}></input>
                 </td>
-              </tr>
              </table>
-            <button className="btn btn-default" type="submit" >Next</button> 
-           <div>
+             </div>
+          <div style={buttonstyle}>
+            <Button className="btn btn-default" type="submit" >Check</Button> 
            <Link to="/list">
-           <Button> <Span/> Eligible</Button>
-         </Link>
-         </div>
-         <div>
+           <Button> I am eligible</Button>
+            </Link>
             <Link to="/">
-            <Button> <Span/> Non-Eligible</Button>
+            <Button>I am not eligible</Button>
           </Link>
           </div>
           </form>
