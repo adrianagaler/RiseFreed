@@ -22,12 +22,12 @@ class LandingPage extends Component {
                                           </div>
                                           <div className="desktop_hd-0-0-0-0-0-0-0-0-2">
                                               <div className="desktop_hd-0-0-0-0-0-0-0-0-2-0">
-                                                  <div className="desktop_hd-contact_us-1"> Contact Us </div>
+                                                  <div className="desktop_hd-contact_us-1"><Link to="/contact"> Contact Us </Link></div>
                                               </div>
                                           </div>
                                           <div className="desktop_hd-0-0-0-0-0-0-0-0-3">
                                               <div className="desktop_hd-0-0-0-0-0-0-0-0-3-0">
-                                                  <div className="desktop_hd-faqs-3"> FAQs</div>
+                                                  <div className="desktop_hd-faqs-3"><Link to="/faq">FAQs</Link> </div>
                                               </div>
                                           </div>
                                           <div className="desktop_hd-0-0-0-0-0-0-0-0-4">
