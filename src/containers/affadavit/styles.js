@@ -13,21 +13,6 @@ export const Button1 = styled.button`
     cursor: pointer;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    &:hover ${Span}{
-      padding-right: 25px;
-      color: red;
-    }
-    &:hover ${Span}:after{
-      opacity: 1;
-      right: 0;
-    }
-`;
-
-export const Span = styled.span`
-    cursor: pointer;
-    position: relative;
-    transition: 0.5s;
-  }
 `;
 
 
