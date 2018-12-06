@@ -1,12 +1,10 @@
 import React, {Component} from 'react';  
 
 /* Import Components */
-import CheckBox from '../../components/CheckBox';  
 import Input from '../../components/Input';  
 import TextArea from '../../components/TextArea';  
-import Select from '../../components/Select';
 import Button from '../../components/Button';
-import { Button1, Span } from "./styles";
+import { Button1 } from "./styles";
 import { Link } from "react-router-dom";
 
 
