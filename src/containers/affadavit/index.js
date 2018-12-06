@@ -162,8 +162,4 @@ That was not the first time Jack abused me. About a month ago, we were in the be
   }
 }
 
-const buttonStyle = {
-  margin : '10px 10px 10px 10px'
-}
-
 export default protectiveorder;

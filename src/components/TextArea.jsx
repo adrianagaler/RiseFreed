@@ -1,6 +1,9 @@
 import React from 'react';
 
-
+//TextArea component builds off react's props as base code
+//includes labels, and text area with attributes of className,
+//name, rows, cols, value, onChange, placeholder.
+//Use of these components allow for more dynamic coding of page.
 const TextArea = (props) => (  
   <div className="form-group">
     <label className="form-label">{props.title}</label>

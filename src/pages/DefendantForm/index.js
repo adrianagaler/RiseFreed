@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button, Span } from "./styles";
 
-// objects for styling the page
+// constants for styling the page
 const background = {
   backgroundImage: "url('https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')",
 }
@@ -29,7 +29,8 @@ class FormsPage extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  //render design for the defendant form page
+  //below, we created the form using the input functions from react
   render() {
     return (
       <form onSubmit={this.handleSubmit} style={background}>
