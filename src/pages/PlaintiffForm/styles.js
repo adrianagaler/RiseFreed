@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// style for the button and Span objects used in Plaintiff index.js
 export const Button = styled.button`
     width: 30%;
     border-radius: 4px;

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
 import { Button, Span } from "./styles";
-import { SSL_OP_TLS_BLOCK_PADDING_BUG } from "constants";
 
+// Eligibility for filling the forms. Needs to be updated to restrict access to other forms if user is not elligible 
+
+// Pre-defined objects: background with its styling components
 const background = {
   backgroundImage: "url('https://images.unsplash.com/photo-1494451930944-8998635c2123?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6fc9d727accaab5052cd754f634e768&auto=format&fit=crop&w=1651&q=80')",
 }
@@ -20,32 +21,38 @@ const buttonstyle = {
 };
 
 
+// The functions that handles the input of checkboxes
 class FormsPage extends React.Component {
     constructor() {
       super();
       this.state = {isChecked: false};
     this.handleChecked = this.handleChecked.bind(this); // set this, because you need get methods from CheckBox 
     }
+    // handlechecked is supposed to change the state of a checkbox onclick and memorize this state
     handleChecked () {
       this.setState({isChecked: !this.state.isChecked});
     }
-  
+    
+    // multifunctional feature, can be called upon any change and can be suplemented with complex features
     handleChange(event) {
       this.setState({title: event.target.value})
     }
   
+    // function called on submit: counts how many checkboxes are checked and alerts the user about their elligibility
     handleSubmit(event) {
+      // prevents default submission
       event.preventDefault();  
+      // stores the checbox info as a dictionary ({class of the checkbox: true/false})
       var checks = document.getElementsByClassName('checkbox');
+      // keeps track of the number of checkboxes clicked
       var count = 0;
         for (var i = 0;i<3;i++){
-          var link;
           if (checks[i].checked===true){
             count=count+1;
             }
           }
           if (count!==3){
-            // link= "http://localhost:3003/";
+            // link= "http://localhost:3003/"; to be updated to direct the user upon submit directly to a specific link based on eligibility
             alert('Unfortunately, you are not eligible for a plaintiff form.Please click non-eligible to access other resources');
             // return link;
           }
@@ -58,6 +65,7 @@ class FormsPage extends React.Component {
 
     render() {
       return (
+        // call handle submit upon submit
         <form onSubmit={this.handleSubmit} style = {background}>
         <div  style={letterStyle}>
         <h2>Protective Order Elgibility Confirmation</h2>
@@ -81,6 +89,7 @@ class FormsPage extends React.Component {
                 </td>
              </table>
              </div>
+          {/* create the buttons which link to either the forms list(if eligible) and to the homepage(if not eligible) */}
           <div style={buttonstyle}>
             <Button className="btn btn-default" type="submit" >Check</Button> 
            <Link to="/list">

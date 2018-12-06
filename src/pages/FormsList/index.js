@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import './forms.css';
 
+// FormsList index
 class FormsPage extends Component {
     render() {
         return (
+            // this page preserves the navbar from the homepage to be more user friendly
             <div className="desktop_hd-desktop_hd-1">
                 <div className="desktop_hd-0">
                     <div className="desktop_hd-path-2">
@@ -44,6 +46,7 @@ class FormsPage extends Component {
                                 </div>
                             </div>
                         </div>
+                        {/* Links to forms. To be completed with more forms and digitalized. */}
                         <div className="desktop_hd-1-0-1">
                             <div className="desktop_hd-1_"> <Link to="/eligibility">
                                 1. Eligibility Confirmation </Link>

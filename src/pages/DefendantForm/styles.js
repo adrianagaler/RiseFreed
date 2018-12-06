@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+// style for Defendant For react
+//styles buttons, includes in it the capacity
+//for the button designs to react dynamically to changes like being clicked
 export const Button = styled.button`
     width: 30%;
     border-radius: 4px;
@@ -23,7 +26,7 @@ export const Button = styled.button`
       right: 0;
     }
 `;
-
+//span helps makes the button responsive to pointer changes
 export const Span = styled.span`
     cursor: pointer;
     position: relative;

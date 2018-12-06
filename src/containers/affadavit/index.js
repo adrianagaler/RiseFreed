@@ -1,17 +1,43 @@
+//Created with guidance and reference to the README tutorials on react forms
 import React, {Component} from 'react';  
+//The affadavit is structured like a container
 
-/* Import Components */
+/* Import Components and stylies and the 'Link'*/
 import Input from '../../components/Input';  
 import TextArea from '../../components/TextArea';  
 import Button from '../../components/Button';
 import { Button1 } from "./styles";
 import { Link } from "react-router-dom";
 
+//constants for styling
+//background image, background design for the form, and button styling
+const background = {
+  backgroundImage: "url('https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')",
+}
+const formbackground = {
+  backgroundColor: "#FFFFFF",
+  padding: 30,
+  margin: 20,
+  display: "inline-block",
+  fontFamily: "helvetica",
+  fontSize: 15,
+  textAlign: "left",
+  width: 1200,
+}
+const buttonStyle = {
+  width: 100,
+  backgroundColor: "#FFFFFF",
+  color: "#000000",
+  textAlign: "left",
+  fontSize: 15,
+  margin: 10
+};
 
+//creates the form
 class protectiveorder extends Component {  
   constructor(props) {
     super(props);
-
+    //in the constructur, lists the attributes for this.state - name, email, and about
     this.state = {
       newUser: {
         name: '',
@@ -21,14 +47,15 @@ class protectiveorder extends Component {
       },
 
     }
+    //defines how the components get mounted
     this.handleTextArea = this.handleTextArea.bind(this);
     this.handleFullName = this.handleFullName.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleInput = this.handleInput.bind(this);
   }
-
-  /* This lifecycle hook gets executed when the component mounts */
   
+  //takes in dynamic state, the handleFullName function allows
+  //prev state to be updates and to integrate new data with console.log for hthe name attribute
   handleFullName(e) {
    let value = e.target.value;
    this.setState( prevState => ({ newUser : 
@@ -37,6 +64,7 @@ class protectiveorder extends Component {
       }), () => console.log(this.state.newUser))
   }
 
+  //handleInput works similarly but is specifically for storing values for the inputted text
   handleInput(e) {
        let value = e.target.value;
        let name = e.target.name;
@@ -45,7 +73,7 @@ class protectiveorder extends Component {
         }
       }), () => console.log(this.state.newUser))
   }
-
+  //handleTextArea likewise does the same
   handleTextArea(e) {
     console.log("Inside handleTextArea");
     let value = e.target.value;
@@ -56,7 +84,11 @@ class protectiveorder extends Component {
       }), ()=>console.log(this.state.newUser))
   }
 
-
+  //handleFormSubmit stores the state of the new user in userData
+  //creates the beginnings of a json file to be POSTed for the backend
+  //this currently doesn't succesfully work yet because we haven't built
+  //out the backend, but works as the beginning of it and how
+  //we'll hope to build it out
   handleFormSubmit(e) {
     e.preventDefault();
     let userData = this.state.newUser;
@@ -75,31 +107,10 @@ class protectiveorder extends Component {
     })
   }   
 
-
+//renders the page, using the components for the form previous ly defined and storing
+//the values for the newUser
   render() {
-    var background = {
-    backgroundImage: "url('https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')",
-  }
-  var formbackground = {
-    backgroundColor: "#FFFFFF",
-    padding: 30,
-    margin: 20,
-    display: "inline-block",
-    fontFamily: "helvetica",
-    fontSize: 15,
-    textAlign: "left",
-    width: 1200,
-  }
-  var buttonStyle = {
-    width: 100,
-    backgroundColor: "#FFFFFF",
-    color: "#000000",
-    textAlign: "left",
-    fontSize: 15,
-    margin: 10
-  };
     return (
-    
         <form style = {formbackground} className="container-fluid" onSubmit={this.handleFormSubmit}>
        
         <h2>Please fill out your affadavit.</h2>

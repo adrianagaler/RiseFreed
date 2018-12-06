@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import './desktop_hd.css';
 
+// Homepage 
 class LandingPage extends Component {
   render() {
     return (
+
+        // calls all the style classes from desktop_hd.css
       <div className="desktop_hd-desktop_hd-1">
           <div className="desktop_hd-0">
               <div className="desktop_hd-0-0">
@@ -14,6 +17,7 @@ class LandingPage extends Component {
                               <div className="desktop_hd-0-0-0-0-0-0">
                                   <div className="desktop_hd-path-1">
                                       <div className="desktop_hd-0-0-0-0-0-0-0-0">
+                                            {/* Div for the main img and the Navbar, which links to About, contact us, FAQs, Forms*/}
                                           <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/7578331555177628-1543890704871-B416BBA6-1B4D-433B-A44C-C3C2CE3A2C8E.png" className="desktop_hd-risefreed_2" /> 
                                           <div className="desktop_hd-0-0-0-0-0-0-0-0-1">
                                               <div className="desktop_hd-0-0-0-0-0-0-0-0-1-0">
@@ -38,11 +42,13 @@ class LandingPage extends Component {
                                       </div>
                                   </div>
                               </div>
+                              {/* Header message */}
                               <div className="desktop_hd-0-0-0-0-0-1">
                                   <div className="desktop_hd-freedom_is_safety_-6">
                                       Freedom is safety.
                                   </div>
                               </div>
+                              {/* Text on the page */}
                               <div className="desktop_hd-0-0-0-0-0-2">
                                   <div className="desktop_hd-filing_a_protective-6">
                                       <div>Filing a protective order is </div>
@@ -89,6 +95,8 @@ class LandingPage extends Component {
                   </div>
               </div>
           </div>
+
+          {/* Presenting some helpful resources, mostly text on top of an image  */}
           <div className="desktop_hd-1">
               <div className="desktop_hd-1-0">
                   <div className="desktop_hd-1-0-0">

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ReactDOM from 'react-dom';
 import { Button, Span } from "./styles";
 
+// This is the page for the Plaintiff form, which includes imported background img, style
 const background = {
   backgroundImage: "url('https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')",
 }
@@ -39,6 +39,8 @@ class FormsPage extends React.Component {
   
   render() {
     return (
+      // handle submit is called as an embedded react function and the 
+      // class background, which includes letterstyle, formabackground, h are called for the form style
       <form onSubmit={this.handleSubmit} style = {background}>
         <h2 style = {h}>Plaintiff Information Form</h2>
         <fieldset style = {formbackground}>
@@ -113,6 +115,8 @@ class FormsPage extends React.Component {
 
          </fieldset>
          <div style = {hel}>
+
+         {/* links the page to next form, the forms list, and the homepage. */}
          <Link to="/list">
             <Button> <Span/> Go back to next form</Button>
           </Link>

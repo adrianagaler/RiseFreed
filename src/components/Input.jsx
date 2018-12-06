@@ -1,6 +1,9 @@
 import React from 'react';
-
-
+//Use of these components allow for more dynamic coding of page.
+//Input built off tutorials referenced in README file. 
+//specifies the components of this input constant which
+//uses react props as base for the code. It includes labels, 
+//attributes of classname, id, name, type, value, onChange, and placeholder
 const Input = (props) => {
 	//console.log(props.value);
 	return (  

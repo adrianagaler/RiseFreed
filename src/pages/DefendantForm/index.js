@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ReactDOM from 'react-dom';
 import { Button, Span } from "./styles";
 
+// objects for styling the page
 const background = {
   backgroundImage: "url('https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')",
 }
@@ -25,6 +25,7 @@ const h = {
 }
 
 class FormsPage extends React.Component {
+  // default definition of state in react
   constructor(props) {
     super(props);
   }
