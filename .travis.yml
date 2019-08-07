@@ -3,7 +3,7 @@ node_js:
   - 12.4.0
 cache: npm
 install:
-  - travis_wait npm install --save react react-dom react-scripts
+  - travis_wait npm install -g npm@latest --save react react-dom react-scripts
 script:
   - travis_wait npm start
 deploy:
