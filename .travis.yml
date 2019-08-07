@@ -4,6 +4,7 @@ node_js:
 cache: npm
 install:
   - travis_wait npm install -g npm@latest --save react react-dom react-scripts
+  - npm run build
 script:
   - travis_wait npm start
 deploy:
