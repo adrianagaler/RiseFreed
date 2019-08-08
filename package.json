@@ -16,10 +16,10 @@
     "react-emotion": "^10.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^3.0.1",
     "react-typeform-embed": "^0.2.1",
     "rebass": "^3.0.0-12",
-    "serve": "^8.2.0",
+    "serve": "^11.1.0",
     "styled-components": "^4.1.2",
     "styled-grid": "^1.0.0-beta.1",
     "yup": "^0.26.6"
