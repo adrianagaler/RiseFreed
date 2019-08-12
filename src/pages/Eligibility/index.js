@@ -2,13 +2,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./styles";
-
+import eligibility from "./eligibility.jpeg";
 // Eligibility for filling the forms. Needs to be updated to restrict access to other forms if user is not elligible
 
 // Pre-defined objects: background with its styling components
 const background = {
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1494451930944-8998635c2123?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6fc9d727accaab5052cd754f634e768&auto=format&fit=crop&w=1651&q=80')"
+  backgroundImage: `url(${eligibility})`
 };
 const letterStyle = {
   margin: 50,

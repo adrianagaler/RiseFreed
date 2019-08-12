@@ -1,191 +1,219 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import './desktop_hd.css';
-
-// Homepage 
+import "./styles1.css";
+import icon from "./photos/logo.png";
+import sponsor1 from "./photos/cs50.png";
+import sponsor2 from "./photos/legal_aid_bureau.jpg";
+// Homepage
 class LandingPage extends Component {
   render() {
     return (
-
-        // calls all the style classes from desktop_hd.css
-      <div className="desktop_hd-desktop_hd-1">
-          <div className="desktop_hd-0">
-              <div className="desktop_hd-0-0">
-                  <div className="desktop_hd-0-0-0">
-                      <div className="desktop_hd-0-0-0-0">
-                          <div className="desktop_hd-adult-1">
-                              <div className="desktop_hd-0-0-0-0-0-0">
-                                  <div className="desktop_hd-path-1">
-                                      <div className="desktop_hd-0-0-0-0-0-0-0-0">
-                                            {/* Div for the main img and the Navbar, which links to About, contact us, FAQs, Forms*/}
-                                          <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/7578331555177628-1543890704871-B416BBA6-1B4D-433B-A44C-C3C2CE3A2C8E.png" className="desktop_hd-risefreed_2" /> 
-                                          <div className="desktop_hd-0-0-0-0-0-0-0-0-1">
-                                              <div className="desktop_hd-0-0-0-0-0-0-0-0-1-0">
-                                                  <div className="desktop_hd-about-1"><Link to="/about"> About </Link></div>
-                                              </div>
-                                          </div>
-                                          <div className="desktop_hd-0-0-0-0-0-0-0-0-2">
-                                              <div className="desktop_hd-0-0-0-0-0-0-0-0-2-0">
-                                                  <div className="desktop_hd-contact_us-1"><Link to="/contact"> Contact Us </Link></div>
-                                              </div>
-                                          </div>
-                                          <div className="desktop_hd-0-0-0-0-0-0-0-0-3">
-                                              <div className="desktop_hd-0-0-0-0-0-0-0-0-3-0">
-                                                  <div className="desktop_hd-faqs-3"><Link to="/faq">FAQs</Link> </div>
-                                              </div>
-                                          </div>
-                                          <div className="desktop_hd-0-0-0-0-0-0-0-0-4">
-                                              <div className="desktop_hd-0-0-0-0-0-0-0-0-4-0">
-                                                  <div className="desktop_hd-forms-1"><Link to="/list"> Forms </Link></div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
+      <body>
+        <div className="header-0-1">
+          <div className="header-0-2">
+            <div className="header-0-3">
+              <div className="hd-0-4">
+                <div className="hd-0-5">
+                  <div className="background">
+                    <div className="hd-0-6">
+                      <div className="hd-1-1">
+                        <div className="hd-0-7">
+                          {/* Div for the main img and the Navbar, which links to About, contact us, FAQs, Forms*/}
+                          <img src={icon} alt="" className="icon" />
+                          <div className="hd-0-8">
+                            <div className="hd-0-9">
+                              <div className="about">
+                                <Link to="/about"> About </Link>
                               </div>
-                              {/* Header message */}
-                              <div className="desktop_hd-0-0-0-0-0-1">
-                                  <div className="desktop_hd-freedom_is_safety_-6">
-                                      Freedom is safety.
-                                  </div>
-                              </div>
-                              {/* Text on the page */}
-                              <div className="desktop_hd-0-0-0-0-0-2">
-                                  <div className="desktop_hd-filing_a_protective-6">
-                                      <div>Filing a protective order is </div>
-                                      <div>a first step to freedom.</div>
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-0-0-0-0-0-3">
-                                  <div className="desktop_hd-our_project_helps_yo-1">
-                                      Our project helps you file for a restraining order from an abusive partner, guiding you at every step.  
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-0-0-0-0-0-4">
-                                  <div className="desktop_hd-path-9">
-                                      <div className="desktop_hd-0-0-0-0-0-4-0-0">
-                                          <div className="desktop_hd-should_i_consider_a-1"><Link to="/list">
-                                              {"Should I consider a protective order?"} </Link>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-0-0-0-0-0-5">
-                                  <div className="desktop_hd-your_information_wil-6">
-                                      <div>Your information will only be shared </div>
-                                      <div>with a pro bono domestic violence attorney. </div>
-                                  </div>
-                              </div>
+                            </div>
                           </div>
-                          <div className="desktop_hd-path-7">
-                              <div className="desktop_hd-0-0-0-0-1-0">
-                                  <div className="desktop_hd-proudly_created_with-5">
-                                      Proudly created with the guidance of the following 
-                                  </div>
+                          <div className="hd-2-1">
+                            <div className="hd-2-2">
+                              <div className="contact_us">
+                                <Link to="/contact"> Contact Us </Link>
                               </div>
-                              <div className="desktop_hd-0-0-0-0-1-1">
-                                  <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1020769834620873-1543890704882-0507C4EC-0A5D-4EC6-9BEA-3317EF041D9D.png" className="desktop_hd-cs5" /> 
-                                  <div className="desktop_hd-0-0-0-0-1-1-1">
-                                      <div className="desktop_hd-0-0-0-0-1-1-1-0">
-                                          <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/4124993499345434-1543890704887-05C80FB2-7BC9-4171-A027-6297919B92C0.png" className="desktop_hd-legalaidbureau-4" /> 
-                                      </div>
-                                  </div>
-                              </div>
+                            </div>
                           </div>
+                          <div className="hd-3-0">
+                            <div className="hd-3-1">
+                              <div className="faqs-3">
+                                <Link to="/faq">FAQs</Link>{" "}
+                              </div>
+                            </div>
+                          </div>
+                          <div className="hd-4-0">
+                            <div className="hd-4-1">
+                              <div className="desktop_hd-forms-1">
+                                <Link to="/list"> Forms </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                    </div>
+                    {/* Header message */}
+                    <div className="hd-1-3">
+                      <div className="freedom_is_safety">
+                        Freedom is safety.
+                      </div>
+                    </div>
+                    {/* Text on the page */}
+                    <div className="hd-2-3">
+                      <div className="filing_a_protective">
+                        <div>Filing a protective order is </div>
+                        <div>a first step to freedom.</div>
+                      </div>
+                    </div>
+                    <div className="hd-3-2">
+                      <div className="goal">
+                        Our project helps you file for a restraining order from
+                        an abusive partner, guiding you at every step.
+                      </div>
+                    </div>
+                    <div className="hd-4-0">
+                      <div className="hd-4-1">
+                        <div className="hd-4-2">
+                          <div className="hd-4-3">
+                            <Link to="/list">
+                              {"Should I consider a protective order?"}{" "}
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="hd-5-0">
+                      <div className="confidentiality">
+                        <div>Your information will only be shared </div>
+                        <div>with a pro bono domestic violence attorney. </div>
+                      </div>
+                    </div>
                   </div>
+                  <div className="hd-6-0">
+                    <div className="hd-6-1">
+                      <div className="sponsors">
+                        Proudly created with the guidance of the following
+                      </div>
+                    </div>
+                    <div className="hd-6-2">
+                      <img src={sponsor1} alt="" className="cs50" />
+                      <div className="hd-6-3">
+                        <div className="hd-6-4">
+                          <img
+                            src={sponsor2}
+                            alt=""
+                            className="legalaidbureau"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
 
           {/* Presenting some helpful resources, mostly text on top of an image  */}
-          <div className="desktop_hd-1">
-              <div className="desktop_hd-1-0">
-                  <div className="desktop_hd-1-0-0">
-                      <div className="desktop_hd-1-0-0-0">
-                          <div className="desktop_hd-path-5" /> 
-                          <div className="desktop_hd-friends-7">
-                              <div className="desktop_hd-1-0-0-0-1-0">
-                                  <div className="desktop_hd-the_national_domesti-7">
-                                      The National Domestic Violence Hotline
-                                  </div>
-                                  <div className="desktop_hd-cambridge_police_dep-1">
-                                      Cambridge Police Department
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-1-0-0-0-1-1">
-                                  <div className="desktop_hd-1-0-0-0-1-1-0">
-                                      <div className="desktop_hd-1-0-0-0-1-1-0-0">
-                                          <div className="desktop_hd-respond_inc_-3">
-                                              RESPOND inc.
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className="desktop_hd-1-0-0-0-1-1-1">
-                                      <div className="desktop_hd-1-0-0-0-1-1-1-0">
-                                          <div className="desktop_hd-casa_myrna-1">Casa Myrna</div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-1-0-0-0-1-2">
-                                  <div className="desktop_hd-atask_-_asian_domest-8">
-                                      ATASK - Asian Domestic Violence Shelter
-                                  </div>
-                                  <div className="desktop_hd-national_resource_ce-1">
-                                      National Resource Center on Domestic Violence
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-1-0-0-0-1-3">
-                                  <div className="desktop_hd-freefrom_-_economic-5">
-                                      FreeFrom - Economic Empowerment
-                                  </div>
-                                  <div className="desktop_hd-transition_house-1">
-                                      Transition House
-                                  </div>
-                              </div>
-                              <div className="desktop_hd-1-0-0-0-1-4">
-                                  <div className="desktop_hd-jane_doe_inc_-5">
-                                      Jane Doe Inc.
-                                  </div>
-                                  <div className="desktop_hd-safe_haven-1">Safe Haven</div>
-                              </div>
-                          </div>
-                          <div className="desktop_hd-we_believe_that_ever-8">
-                              <div>We believe that everyone has the right</div>
-                              <div>to be free and feel safe in their own home.</div>
-                              <br/>
-                              <div>Domestic violence is the most common killer of </div>
-                              <div>women around the world. 70 percent of women </div>
-                              <div>will face intimate partner violence.</div>
-                              <br/>
-                              <div>This issue affects both men and our nation too. </div>
-                              <div>Domestic violence is a leading cause of homelessness </div>
-                              <div>and homicide. It costs our  U.S. economy over $55 billion </div>
-                              <div>in lost hours worked. We all know sons and daughters of</div>
-                              <div>survivors.</div>
-                              <br/>
-                              <div>We want to help survivors get back on their feet. And we </div>
-                              <div>{"want something more than that too – if the legal system "}</div>
-                              <div>can protect victims,we can also prevent abusers from hurting </div>
-                              <div>their loved ones and give kids a better childhood. </div>
-                              <br/>
-                              <div>Together, we can all rise freed. </div>
-                              <br/>
-                              <br/>
-                              <div> </div>
-                              <br/>
-                              <br/>
-                              <div> </div>
-                          </div>
-                          <div className="desktop_hd-other_resources_to_s-8">
-                              Other resources to secure your rights
-                          </div>
+          <div className="hd-6-5">
+            <div className="hd-6-6">
+              <div className="hd-6-7">
+                <div className="hd-6-8">
+                  <div className="hd-7-0" />
+                  <div className="hd-7-1">
+                    <div className="hd-7-2">
+                      <div className="resources">
+                        The National Domestic Violence Hotline
                       </div>
+                      <div className="cambridge_police">
+                        Cambridge Police Department
+                      </div>
+                    </div>
+                    <div className="hd-7-3">
+                      <div className="hd-7-4">
+                        <div className="hd-7-5">
+                          <div className="respond">RESPOND inc.</div>
+                        </div>
+                      </div>
+                      <div className="hd-7-6">
+                        <div className="hd-7-7">
+                          <div className="casa_myrna">Casa Myrna</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="hd-8-0">
+                      <div className="atask">
+                        ATASK - Asian Domestic Violence Shelter
+                      </div>
+                      <div className="national_resource">
+                        National Resource Center on Domestic Violence
+                      </div>
+                    </div>
+                    <div className="hd-8-1">
+                      <div className="hd-8-2">
+                        FreeFrom - Economic Empowerment
+                      </div>
+                      <div className="transition_house">Transition House</div>
+                    </div>
+                    <div className="hd-8-3">
+                      <div className="jane_doe">Jane Doe Inc.</div>
+                      <div className="safe_haven">Safe Haven</div>
+                    </div>
                   </div>
+                  <div className="belief">
+                    <div>We believe that everyone has the right</div>
+                    <div>to be free and feel safe in their own home.</div>
+                    <br />
+                    <div>Domestic violence is the most common killer of </div>
+                    <div>women around the world. 70 percent of women </div>
+                    <div>will face intimate partner violence.</div>
+                    <br />
+                    <div>This issue affects both men and our nation too. </div>
+                    <div>
+                      Domestic violence is a leading cause of homelessness{" "}
+                    </div>
+                    <div>
+                      and homicide. It costs our U.S. economy over $55 billion{" "}
+                    </div>
+                    <div>
+                      in lost hours worked. We all know sons and daughters of
+                    </div>
+                    <div>survivors.</div>
+                    <br />
+                    <div>
+                      We want to help survivors get back on their feet. And we{" "}
+                    </div>
+                    <div>
+                      {
+                        "want something more than that too – if the legal system "
+                      }
+                    </div>
+                    <div>
+                      can protect victims,we can also prevent abusers from
+                      hurting{" "}
+                    </div>
+                    <div>
+                      their loved ones and give kids a better childhood.{" "}
+                    </div>
+                    <br />
+                    <div>Together, we can all rise freed. </div>
+                    <br />
+                    <br />
+                    <div> </div>
+                    <br />
+                    <br />
+                    <div> </div>
+                  </div>
+                  <div className="other">
+                    Other resources to secure your rights
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-          <div className="desktop_hd-2" /> 
-      </div>
+          <div className="header1" />
+        </div>
+      </body>
     );
   }
-};
+}
 
 export default LandingPage;

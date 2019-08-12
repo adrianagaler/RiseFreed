@@ -16,10 +16,3 @@ export const Button = styled.button`
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 `;
-
-// export const Span = styled.span`
-//     cursor: pointer;
-//     position: relative;
-//     transition: 0.5s;
-//   }
-// `;

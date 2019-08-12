@@ -2,14 +2,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./styles";
-
+import Background from "./defendant.jpeg";
 // constants for styling the page
 const background = {
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80')"
+  backgroundImage: `url(${Background})`,
+  backgroundSize: 4700,
+  width: 1600,
+  height: 3000
 };
 const formbackground = {
-  backgroundColor: "#FFFFFF"
+  backgroundColor: "#000000"
 };
 const letterStyle = {
   margin: 50,

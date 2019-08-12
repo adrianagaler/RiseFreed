@@ -2,7 +2,11 @@ import React from "react";
 import * as typeformEmbed from "@typeform/embed";
 import { Button } from "./styles";
 import { Link } from "react-router-dom";
+import Background from "../DefendantForm/defendant.jpeg";
 
+const background = {
+  backgroundImage: `url(${Background})`
+};
 // This is the component of 209 Protective Order Form
 class Form extends React.Component {
   // Defines the state
@@ -34,7 +38,7 @@ class Form extends React.Component {
         />
 
         {/* Redirects the user with links to other forms and mainpage */}
-        <div>
+        <div style={background}>
           <Link to="/list">
             <Button> Go back to next form </Button>
           </Link>
